@@ -1,0 +1,20 @@
+{
+  "priority": 30,
+  "request": {
+    "method": "GET",
+    "url": "/rest/api/customer/1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": 1,
+      "first_name":"Yasmina",
+      "last_name": "Gil",
+      "properties": {
+        "age": 35,
+        "active": true,
+        "date_of_birth":"1980-02-12"
+      }
+    }
+  }
+}

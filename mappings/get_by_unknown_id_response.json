@@ -1,0 +1,14 @@
+{
+  "priority": 90,
+  "request": {
+    "method": "GET",
+    "url": "/rest/api/customer/999"
+  },
+  "response": {
+    "status": 404,
+    "jsonBody": {
+      "id": 999,
+      "status": "Failed to get user: unknown user id"
+    }
+  }
+}

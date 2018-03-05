@@ -1,0 +1,14 @@
+{
+  "priority":25,
+  "request":{
+    "method":"POST",
+    "urlPattern" : "/rest/api/customer/.*([id=&]|[id=xxinvalidxx&]|[first_name=&]|[first_name=xxinvalidxx&]|[&last_name=]|[&last_name=xxinvalidxx])*"
+  },
+  "response":{
+    "status":401,
+    "jsonBody":{
+      "status":"Failed to create user: empty or invalid mandatory parameter"
+    }
+
+  }
+}

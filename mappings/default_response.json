@@ -1,0 +1,14 @@
+{
+  "priority": 90,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/%2F%2Fmappings/__admin/"
+  },
+  "response": {
+    "status": 200,
+    "body": "\n\n******Wiremock is up and running!******\n\n",
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "priority": 35,
+  "request": {
+    "method": "GET",
+    "url": "/rest/api/customer/3"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": 3,
+      "first_name":"Carmen",
+      "last_name": "Larios",
+      "properties": {
+        "age": 46,
+        "active": false,
+        "date_of_birth":"1970-08-20"
+      }
+    }
+  }
+}

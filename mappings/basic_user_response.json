@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/rest/api/customer/?id=2&first_name=Ismael&last_name=Moreno"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": 2,
+      "status": "successfully created"
+    }
+  }
+}

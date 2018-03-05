@@ -1,0 +1,14 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "POST",
+    "url": "/rest/api/customer/?id=1&first_name=Yasmina&last_name=Gil&age=35&active=true&date_of_birth=1980-02-12"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": 1,
+      "status": "successfully created"
+    }
+  }
+}
