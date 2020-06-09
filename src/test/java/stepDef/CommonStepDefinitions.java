@@ -1,13 +1,15 @@
 package stepDef;
 
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Before;
 import util.Context;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
@@ -52,7 +54,7 @@ public class CommonStepDefinitions {
     //Given Methods
 
     @Given("^I am a user with an id (.*) and a firstname (.*) and a last name (.*)$")
-    public void log_user(String id, String firstname, String lastname) {
+    public void iAmAUserWithAnIdAndAFirstnameAndALastName(String id, String firstname, String lastname) {
         request = given();
         request.contentType(JSON_TYPE);
         request.queryParam(ID, id.trim());
@@ -131,4 +133,6 @@ public class CommonStepDefinitions {
         JsonPath jsonPath = this.context.getResponse().jsonPath();
         assertThat(ATTRIBUTE + attribute + IS_PRESENT,jsonPath.get(PROPERTIES + attribute), isEmptyOrNullString());
     }
+
+
 }

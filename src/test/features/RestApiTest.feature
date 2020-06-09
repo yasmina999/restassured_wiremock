@@ -3,6 +3,8 @@ Feature: Rest Api Test
 
   Scenario: Create a user with mandatory details returns a successful response
     Given I am a user with an id 2 and a firstname Ismael and a last name Moreno
+
+
     When I am making a POST request to endpoint rest/api/customer/
     Then The HTTP status code is 201
     And The response includes the following:

@@ -29,7 +29,4 @@ public class Context {
     public RequestSpecification getRequest() {
         return request;
     }
-    public void setRequest() {
-        this.request = request;
-    }
 }
