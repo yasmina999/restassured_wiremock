@@ -1,1 +1,1 @@
-java -jar wiremock-standalone-2.14.0.jar --port 8090 --verbose --record-mappings
+java -jar wiremock-standalone-2.26.3.jar --port 8090 --verbose --record-mappings
